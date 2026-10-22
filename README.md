@@ -1,10 +1,10 @@
 # bead studio
 
-将照片、插画和像素画转换成拼豆图纸。支持自定义尺寸、品牌色卡、整色替换预览、用量清单及 PNG / SVG / JSON 导出。图片在浏览器本机处理。
+将照片、插画和像素画转换成拼豆图纸。支持自定义尺寸、品牌色卡、整色替换预览、用量清单及 PNG / SVG / JSON 导出。
 
 公网部署只需发布 `dist/`，不需要后端或数据库。Cloudflare Pages 与自建服务器配置见 [部署说明](DEPLOYMENT.md)。
 
-Static, browser-local image-to-bead-pattern tool. No npm installation or server API is required.
+Static image-to-bead-pattern tool. No npm installation or server API is required.
 
 ```sh
 python3 -m http.server 8000 --directory dist

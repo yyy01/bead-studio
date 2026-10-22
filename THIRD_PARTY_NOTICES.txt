@@ -1,0 +1,40 @@
+Palette data: Bitbead, https://www.bitbead.app
+Source: https://github.com/pomodiary/bitbead.app/tree/main/data
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+The original palettes.json is retained. HEX values are approximate vendor / photography swatches, not spectrophotometer data. No affiliation with manufacturers. Bead pitch is user-selected independently of color data.
+
+Oklab formulas: Björn Ottosson, https://bottosson.github.io/posts/oklab/
+Conversion coefficients published for public-domain use (also available under MIT). Independently transcribed implementation.
+CIEDE2000: Sharma, Wu & Dalal (2005), Color Research and Application 30(1), 21–30.
+https://hajim.rochester.edu/ece/sites/gsharma/ciede2000/
+Standard reference test pairs are included in ciede2000-fixtures.txt. Independently implemented formula; not an official CIE implementation.
+
+Test photographs from scikit-image v0.19.3:
+https://github.com/scikit-image/scikit-image/tree/v0.19.3/skimage/data
+See attribution and license descriptions: https://scikit-image.org/docs/stable/api/skimage.data.html
+astronaut: NASA / Eileen Collins, public domain, no known copyright restrictions.
+chelsea: Stefan van der Walt, CC0.
+coffee: Rachel Michetti, CC0.
+Raw RGBA files and benchmark reconstructions are derived from those photographs.
+cat and flower: original pixel illustrations authored for this project.
+
+UI uses local system fonts; no external font is loaded.
+
+Additional test photos: camera (Lav Varshney, CC0) and rocket (SpaceX, public domain), distributed in scikit-image v0.19.3. Attribution and license details: https://scikit-image.org/docs/stable/api/skimage.data.html
+Photo pipeline research references (independent, simplified implementation; not a reproduction of either complete algorithm):
+- Kopf, Shamir & Peers. Content-Adaptive Image Downscaling, SIGGRAPH Asia 2013. https://johanneskopf.de/publications/downscaling/
+- Kyprianidis & Döllner. Image Abstraction by Structure Adaptive Filtering, NPAR 2008. https://www.kyprianidis.com/p/npar2008/
+- Wang, Bovik, Sheikh & Simoncelli. Image quality assessment: From error visibility to structural similarity, IEEE TIP 2004. https://ece.uwaterloo.ca/~z70wang/research/ssim/
+
+Additional v3 benchmark photographs, from the same scikit-image v0.19.3 data directory:
+- brick: derived from CC0Textures Bricks25; CC0, per official scikit-image metadata.
+- grass: linolafett, Grass-01, CC0, per official scikit-image metadata.
+- gravel: derived from CC0Textures Gravel04; CC0, per official scikit-image metadata.
+- clock_motion: Stefan van der Walt, released into the public domain.
+- coins: Brooklyn Museum Collection, no known copyright restrictions, per official metadata.
+- moon: legacy scikit-image sample of the moon's surface; original metadata does not identify its photographer. No new authorship claim is made.
+- hubble_deep_field: NASA Hubble eXtreme Deep Field, public domain, per official metadata.
+- motorcycle_left: downsampled Middlebury 2014 stereo benchmark; Nera Nesic, Porter Westling, Xi Wang, York Kitajima, Greg Krathwohl, Daniel Scharstein. Source and acquisition paper: https://vision.middlebury.edu/stereo/data/scenes2014/
+Metadata: https://github.com/scikit-image/scikit-image/blob/v0.19.3/skimage/data/_fetchers.py
+Benchmark images, raw RGBA copies, and report reconstructions retain their original source attribution.

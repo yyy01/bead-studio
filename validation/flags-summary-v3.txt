@@ -1,0 +1,378 @@
+{
+  "summary": {
+    "v2-none": {
+      "meanDeltaE": 5.670919613837866,
+      "ssim": 0.8893284881351539,
+      "edgeCorrelation": 0.9285430652417757,
+      "ms": 162.66713740000003,
+      "singletons": 424.4,
+      "ssimBicubic": 0.8920597358952012
+    },
+    "v3-none": {
+      "meanDeltaE": 5.6721697724218725,
+      "ssim": 0.889470499195944,
+      "edgeCorrelation": 0.9286774681931744,
+      "ms": 103.7046419000001,
+      "singletons": 423.1,
+      "ssimBicubic": 0.892178260152221
+    },
+    "v2-cleanup": {
+      "meanDeltaE": 5.538114992900139,
+      "ssim": 0.8470667578836177,
+      "edgeCorrelation": 0.9034361547106163,
+      "ms": 175.71359590000023,
+      "singletons": 353.1,
+      "ssimBicubic": 0.849867278311009
+    },
+    "v3-cleanup": {
+      "meanDeltaE": 5.6721697724218725,
+      "ssim": 0.889470499195944,
+      "edgeCorrelation": 0.9286774681931744,
+      "ms": 94.85750009999984,
+      "singletons": 423.1,
+      "ssimBicubic": 0.892178260152221
+    },
+    "v2-dither": {
+      "meanDeltaE": 6.366163805454097,
+      "ssim": 0.7714074131011787,
+      "edgeCorrelation": 0.8454129342751593,
+      "ms": 187.11683739999995,
+      "singletons": 1490.0,
+      "ssimBicubic": 0.7716249393284859
+    },
+    "v3-dither": {
+      "meanDeltaE": 6.2646915563568495,
+      "ssim": 0.8308263714221724,
+      "edgeCorrelation": 0.8920609268185574,
+      "ms": 126.18720809999998,
+      "singletons": 1290.6,
+      "ssimBicubic": 0.8316952256290818
+    },
+    "v2-both": {
+      "meanDeltaE": 6.291845780463014,
+      "ssim": 0.7812026797234093,
+      "edgeCorrelation": 0.8483462755938774,
+      "ms": 184.13822510000006,
+      "singletons": 1410.1,
+      "ssimBicubic": 0.7817541879730989
+    },
+    "v3-both": {
+      "meanDeltaE": 6.198976655712441,
+      "ssim": 0.8373873369735856,
+      "edgeCorrelation": 0.8940871461895915,
+      "ms": 125.93783339999982,
+      "singletons": 1219.6,
+      "ssimBicubic": 0.8385956900702725
+    }
+  },
+  "comparisons": {
+    "v3-none": {
+      "meanDeltaE": {
+        "wins": 2,
+        "ties": 2,
+        "losses": 6,
+        "cases": 10,
+        "worstDelta": 0.00560727628059432
+      },
+      "ssim": {
+        "wins": 5,
+        "ties": 2,
+        "losses": 3,
+        "cases": 10,
+        "worstDelta": -0.0003660693228685341
+      },
+      "edgeCorrelation": {
+        "wins": 7,
+        "ties": 2,
+        "losses": 1,
+        "cases": 10,
+        "worstDelta": -0.0002281998495120563
+      },
+      "ms": {
+        "wins": 8,
+        "ties": 0,
+        "losses": 2,
+        "cases": 10,
+        "worstDelta": 7.391374999999243
+      },
+      "singletons": {
+        "wins": 7,
+        "ties": 3,
+        "losses": 0,
+        "cases": 10,
+        "worstDelta": 0.0
+      },
+      "ssimBicubic": {
+        "wins": 5,
+        "ties": 2,
+        "losses": 3,
+        "cases": 10,
+        "worstDelta": -0.0003240983204257919
+      }
+    },
+    "v2-cleanup": {
+      "meanDeltaE": {
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "cases": 10,
+        "worstDelta": -0.09186390255125954
+      },
+      "ssim": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.11956463843882592
+      },
+      "edgeCorrelation": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.04640885045655829
+      },
+      "ms": {
+        "wins": 1,
+        "ties": 0,
+        "losses": 9,
+        "cases": 10,
+        "worstDelta": 46.52612500000032
+      },
+      "singletons": {
+        "wins": 9,
+        "ties": 0,
+        "losses": 1,
+        "cases": 10,
+        "worstDelta": 1.0
+      },
+      "ssimBicubic": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.11980540898015091
+      }
+    },
+    "v3-cleanup": {
+      "meanDeltaE": {
+        "wins": 2,
+        "ties": 2,
+        "losses": 6,
+        "cases": 10,
+        "worstDelta": 0.00560727628059432
+      },
+      "ssim": {
+        "wins": 5,
+        "ties": 2,
+        "losses": 3,
+        "cases": 10,
+        "worstDelta": -0.0003660693228685341
+      },
+      "edgeCorrelation": {
+        "wins": 7,
+        "ties": 2,
+        "losses": 1,
+        "cases": 10,
+        "worstDelta": -0.0002281998495120563
+      },
+      "ms": {
+        "wins": 9,
+        "ties": 0,
+        "losses": 1,
+        "cases": 10,
+        "worstDelta": 5.847082999998747
+      },
+      "singletons": {
+        "wins": 7,
+        "ties": 3,
+        "losses": 0,
+        "cases": 10,
+        "worstDelta": 0.0
+      },
+      "ssimBicubic": {
+        "wins": 5,
+        "ties": 2,
+        "losses": 3,
+        "cases": 10,
+        "worstDelta": -0.0003240983204257919
+      }
+    },
+    "v2-dither": {
+      "meanDeltaE": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": 1.2475148583347675
+      },
+      "ssim": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.2830125854670974
+      },
+      "edgeCorrelation": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.2041870142028238
+      },
+      "ms": {
+        "wins": 1,
+        "ties": 0,
+        "losses": 9,
+        "cases": 10,
+        "worstDelta": 95.80629200000021
+      },
+      "singletons": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": 3879.0
+      },
+      "ssimBicubic": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.28676678932442046
+      }
+    },
+    "v3-dither": {
+      "meanDeltaE": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": 1.1981664085857568
+      },
+      "ssim": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.1732146571715405
+      },
+      "edgeCorrelation": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.10372645789915524
+      },
+      "ms": {
+        "wins": 8,
+        "ties": 0,
+        "losses": 2,
+        "cases": 10,
+        "worstDelta": 8.32995800000117
+      },
+      "singletons": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": 3034.0
+      },
+      "ssimBicubic": {
+        "wins": 1,
+        "ties": 0,
+        "losses": 9,
+        "cases": 10,
+        "worstDelta": -0.1801807298185143
+      }
+    },
+    "v2-both": {
+      "meanDeltaE": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": 1.0358349853499274
+      },
+      "ssim": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.27313949288703554
+      },
+      "edgeCorrelation": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.18849269392622814
+      },
+      "ms": {
+        "wins": 2,
+        "ties": 0,
+        "losses": 8,
+        "cases": 10,
+        "worstDelta": 74.2347920000002
+      },
+      "singletons": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": 3839.0
+      },
+      "ssimBicubic": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.27917780412129467
+      }
+    },
+    "v3-both": {
+      "meanDeltaE": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": 1.0223512901685234
+      },
+      "ssim": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.17128033084641425
+      },
+      "edgeCorrelation": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": -0.08897106157812407
+      },
+      "ms": {
+        "wins": 7,
+        "ties": 0,
+        "losses": 3,
+        "cases": 10,
+        "worstDelta": 14.953499999999622
+      },
+      "singletons": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 10,
+        "cases": 10,
+        "worstDelta": 2953.0
+      },
+      "ssimBicubic": {
+        "wins": 1,
+        "ties": 0,
+        "losses": 9,
+        "cases": 10,
+        "worstDelta": -0.17788609863672022
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+import fs from 'node:fs';import {processImage as previous} from './engine-v2.mjs';import {processImage} from '../dist/engine.mjs';
+const palette=JSON.parse(fs.readFileSync('dist/palettes.json')).palettes.mard,rows=[];
+for(const name of ['astronaut','chelsea','coffee','camera','rocket','brick','grass','gravel','clock_motion','coins','moon','hubble_deep_field','motorcycle_left']){
+ const meta=JSON.parse(fs.readFileSync(`fixtures/${name}.json`)),data=new Uint8ClampedArray(fs.readFileSync(`fixtures/${name}.rgba`)),opts={data,...meta,width:96,height:96,palette,maxColors:32,mode:'photo',photoStyle:'faithful'},variants={v2:()=>previous(opts),v3:()=>processImage(opts),balanced:()=>processImage({...opts,photoSampling:'balanced'})};
+ for(const run of Object.values(variants))run();
+ for(let round=0;round<5;round++){const names=Object.keys(variants);for(let j=0;j<3;j++){const style=names[(round+j)%3],t=performance.now();variants[style]();rows.push({name,style,round,ms:performance.now()-t})}}console.log(name)
+}
+const median=a=>a.toSorted((a,b)=>a-b)[Math.floor(a.length/2)],byPhoto=Object.fromEntries([...new Set(rows.map(r=>r.name))].map(name=>[name,Object.fromEntries(['v2','v3','balanced'].map(style=>[style,median(rows.filter(r=>r.name===name&&r.style===style).map(r=>r.ms))]))])),summary=Object.fromEntries(['v2','v3','balanced'].map(style=>[style,{meanOfPhotoMedians:Object.values(byPhoto).reduce((s,r)=>s+r[style],0)/Object.keys(byPhoto).length,median:median(rows.filter(r=>r.style===style).map(r=>r.ms))}]));fs.writeFileSync('validation/performance-v3.json',JSON.stringify({rows,byPhoto,summary},null,2));console.log(summary)

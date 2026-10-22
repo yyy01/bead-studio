@@ -1,0 +1,11 @@
+{
+  "name": "bead-studio",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs && node validation/test-photo.mjs && node validation/test-edits.mjs",
+    "benchmark": "node validation/benchmark-photo.mjs",
+    "benchmark:v3": "node validation/benchmark-v3.mjs"
+  }
+}

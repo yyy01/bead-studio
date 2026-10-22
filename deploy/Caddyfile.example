@@ -1,0 +1,6 @@
+# Replace the example domain and point its DNS A/AAAA records to your server.
+bead.example.com {
+    root * /srv/bead-studio/dist
+    encode zstd gzip
+    file_server
+}

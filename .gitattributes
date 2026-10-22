@@ -1,0 +1,9 @@
+# Raw RGBA fixtures are image data, even when their first bytes contain no NUL.
+*.rgba binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+# CSV files use the standard CRLF record terminator.
+*.csv whitespace=cr-at-eol
